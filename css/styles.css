@@ -4,12 +4,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.file-list-container {
     margin: 20px;
 }
 
@@ -20,16 +21,16 @@ h1 {
     text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00;
 }
 
-.file-list {
+ul.file-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.file-entry {
+.file-list .file-entry {
     display: block;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     margin: 5px 0;
     color: #f0f0f0;
     background-color: #333;
@@ -39,7 +40,7 @@ h1 {
     box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
 }
 
-.file-entry:hover {
+.file-list .file-entry:hover {
     background-color: #ff8c00;
     color: #1a1a1a;
 }
